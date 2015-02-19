@@ -38,7 +38,7 @@ public class Fatura {
 
 	public double getValorFatura() {
 
-		double valor = this.preco * this.quantidade; //multiplica o preco pela quantidade
+		double valor = this.preco * this.quantidade;
 
 		if (valor < 0) {
 			valor = 0;
