@@ -38,14 +38,14 @@ public class Fatura {
 
 	public double getValorFatura() {
 
-		double valor = this.getPreco() * this.getQuantidade();
+		double valor = this.preco * this.quantidade;
 
 		if (valor < 0) {
-			return (int) 0;
+			valor = 0;
 		}
 
-		if (this.getPreco() < 0) {
-			return 0.0;
+		if (this.preco < 0) {
+			valor = 0.0;
 		}
 
 		return valor;
