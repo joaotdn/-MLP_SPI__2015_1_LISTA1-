@@ -1,3 +1,5 @@
+package fatura;
+
 public class Fatura {
 	private String numero;
 	private String descricao;
@@ -41,7 +43,7 @@ public class Fatura {
 		double valor = this.preco * this.quantidade;
 
 		if (valor < 0) {
-			valor = 0;
+			valor = 0f;
 		}
 
 		if (this.preco < 0) {
